@@ -1,0 +1,2 @@
+# arkalkulator-git
+Árkalkulátor fejlesztése
