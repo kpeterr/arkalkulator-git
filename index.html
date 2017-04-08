@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<title>PRINTProfi | Árkalkulátor</title>
+	<link href="img/favicon.png" rel="icon" />
+
+	<!-- A Bootstrap CSS hivatkozásai -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+	<!-- Saját stíluslap -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+	<div class="container" id="page">
+
+		<h1>PRINTProfi | Árkalkulátor</h1>
+
+		<hr class="elvalaszto_red">
+
+		<h2>Digitális nyomtatás:</h2>
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<p class="megnevezes">Méret:</p>
+					<div class="radio">
+						<label><input type="radio" name="meret" id="meretA3">A3</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="meret" id="meretA4">A4</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="meret" id="meretA5">A5</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="meret" id="meretA6">A6</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="meret" id="meretLA4">LA4</label>
+					</div>
+
+					<hr class="elvalaszto_grey">
+
+					<p class="megnevezes">Nyomtatási szín:</p>
+					<div class="radio">
+						<label><input type="radio" name="szin" id="szin1">1+0 (egyoldalas fekete)</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="szin" id="szin2">1+1 (kétoldalas fekete)</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="szin" id="szin3">4+0 (egyoldalas színes)</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="szin" id="szin4">4+1 (egyik oldal színes, másik oldal fekete)</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="szin" id="szin5">4+4 (kétoldalas színes)</label>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<p class="megnevezes">Papírtípusok:</p>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir1">80g ofszet fehér (sima fénymásoló papír)</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir2">80g színes</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir3">120g Color Copy</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir4">170g matt műnyomó</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir5">300g fényes műnyomó</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir6">300g matt műnyomó</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir7">300g offszet</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir8">300g színes karton</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir9">300g márvány mintás</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir10">300g kreatív karton</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir11">300g gyöngyház fényű</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir12">Írásvetítő fólia</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir13">Kültéri műanyag matrica (fehér)</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir14">Kültéri műanyag matrica (víztiszta)</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir15">Pausz papír</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="papir" id="papir16">130g öntapadós</label>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<p class="netto_ar">Nettó: <span id="nyomtatas_netto">0.00</span></p>
+					<p class="brutto_ar">Bruttó: <span id="nyomtatas_brutto">0.00</span></p>
+					<form>
+						<div class="form-group">
+							<label for="mennyiseg" class="megnevezes">Mennyiség:</label>
+							<input type="number" class="form-control" id="mennyiseg" value="1">
+						</div>
+					</form>
+					<button type="button" class="btn btn-success" onclick="szamitas()">SZÁMOL</button>
+					<button type="button" class="btn btn-danger" onclick="torles()">TÖRLÉS</button>
+				</div>
+			</div>
+
+		</div>
+
+		<hr class="elvalaszto_red">
+
+	</div>
+
+	<!-- Saját JS fájlok betöltése -->
+	<script src="js/szin.js"></script>
+	<script src="js/fuggvenyek.js"></script>
+
+	<!-- A Bootstrap JS hivatkozásai -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

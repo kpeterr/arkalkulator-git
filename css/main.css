@@ -1,0 +1,36 @@
+body {
+	padding-top: 50px;
+	background-color: #ccc;
+}
+
+#page {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 5px 5px 2px grey;
+	padding-bottom: 20px;
+}
+
+.megnevezes {
+	font-size: 20px;
+}
+
+.elvalaszto_red {
+	border: 1px solid red;
+}
+
+.elvalaszto_grey {
+	border: 1px solid grey;
+}
+
+.input-group {
+	margin-bottom: 10px;
+}
+
+.netto_ar {
+	font-size: 21px;
+}
+
+.brutto_ar {
+	font-size: 25px;
+	font-weight: bold;
+}
