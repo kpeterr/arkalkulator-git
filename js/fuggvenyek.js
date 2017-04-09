@@ -22,6 +22,7 @@ var szin5 = document.getElementById("szin5"); // 4+4
 var mennyiseg = 100;
 var netto = document.getElementById("nyomtatas_netto");
 var brutto = document.getElementById("nyomtatas_brutto");
+//var nettoErtek = Number(netto.innerHTML);
 
 function szamitas() {
 	'use strict';
