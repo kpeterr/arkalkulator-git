@@ -19,15 +19,14 @@ var szin5 = document.getElementById("szin5"); // 4+4
 
 
 
-var mennyiseg = parseInt(mennyiseg.value);
+var mennyiseg = 100;
 var netto = document.getElementById("nyomtatas_netto");
 var brutto = document.getElementById("nyomtatas_brutto");
-colsole.log(mennyiseg);
 
 function szamitas() {
 	'use strict';
-	netto.innerHTML = szin.a3.egyPluszNulla.db1 * mennyiseg;
-	brutto.innerHTML = szin.a3.egyPluszNulla.db1 * mennyiseg * afa;
+	netto.innerHTML = szin.a3.egyPluszNulla.db1.ar * mennyiseg;
+	brutto.innerHTML = netto.innerHTML * afa;
 }
 
 function torles() {
