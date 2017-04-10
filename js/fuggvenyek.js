@@ -44,7 +44,6 @@ var brutto = document.getElementById("nyomtatas_brutto");
 function szamitas() {
 	'use strict';
 	var mennyiseg = document.getElementById("mennyiseg").value;
-	//var mennyisegErtek = Number(mennyiseg);
 	netto.innerHTML = szin.a3.egyPluszNulla.db1.ar * mennyiseg;
 	var bruttoErtek = netto.innerHTML * afa;
 	brutto.innerHTML = Math.round(bruttoErtek * 100) / 100;
