@@ -13,13 +13,14 @@ var meretLA4 = document.getElementById("meretLA4");
 var meretKell = "";
 
 function meretBeall() {
-	if (meretA3.checked = true) {
+	"use strict";
+	if (meretA3.checked) {
 		meretKell = szin.a3;
-	} else if (meretA4.checked = true) {
+	} else if (meretA4.checked) {
 		meretKell = szin.a4;
-	} else if (meretA5.checked = true) {
+	} else if (meretA5.checked) {
 		meretKell = szin.a5;
-	} else if (meretA6.checked = true) {
+	} else if (meretA6.checked) {
 		meretKell = szin.a6;
 	} else {
 		meretKell = szin.la4;
@@ -58,7 +59,7 @@ var brutto = document.getElementById("nyomtatas_brutto");
 //var nettoErtek = Number(netto.innerHTML);
 
 function szamitas() {
-	'use strict';
+	"use strict";
 
 	meretBeall();
 	console.log(meretKell);
@@ -67,11 +68,11 @@ function szamitas() {
 	netto.innerHTML = szin.a3.egyPluszNulla.db1.ar * mennyiseg;
 	var bruttoErtek = netto.innerHTML * afa;
 	brutto.innerHTML = Math.round(bruttoErtek * 10) / 10;
-};
+}
 
 function torles() {
-	'use strict';
+	"use strict";
 	netto.innerHTML = "0.00";
 	brutto.innerHTML = "0.00";
 	mennyiseg.value = 0;
-};
+}
