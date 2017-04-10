@@ -37,13 +37,14 @@ var papir16 = document.getElementById("papir16");
 
 
 // Függvények:
-var mennyiseg = 100;
 var netto = document.getElementById("nyomtatas_netto");
 var brutto = document.getElementById("nyomtatas_brutto");
 //var nettoErtek = Number(netto.innerHTML);
 
 function szamitas() {
 	'use strict';
+	var mennyiseg = document.getElementById("mennyiseg").value;
+	//var mennyisegErtek = Number(mennyiseg);
 	netto.innerHTML = szin.a3.egyPluszNulla.db1.ar * mennyiseg;
 	var bruttoErtek = netto.innerHTML * afa;
 	brutto.innerHTML = Math.round(bruttoErtek * 100) / 100;
@@ -53,4 +54,5 @@ function torles() {
 	'use strict';
 	netto.innerHTML = "0.00";
 	brutto.innerHTML = "0.00";
+	mennyiseg.value = 0;
 };
