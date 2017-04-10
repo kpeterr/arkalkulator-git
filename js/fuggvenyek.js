@@ -10,6 +10,22 @@ var meretA5 = document.getElementById("meretA5");
 var meretA6 = document.getElementById("meretA6");
 var meretLA4 = document.getElementById("meretLA4");
 
+var meretKell = "";
+
+function meretBeall() {
+	if (meretA3.checked = true) {
+		meretKell = szin.a3;
+	} else if (meretA4.checked = true) {
+		meretKell = szin.a4;
+	} else if (meretA5.checked = true) {
+		meretKell = szin.a5;
+	} else if (meretA6.checked = true) {
+		meretKell = szin.a6;
+	} else {
+		meretKell = szin.la4;
+	}
+}
+
 // Színek definiálása:
 var szin1 = document.getElementById("szin1"); // 1+0
 var szin2 = document.getElementById("szin2"); // 1+1
@@ -43,6 +59,10 @@ var brutto = document.getElementById("nyomtatas_brutto");
 
 function szamitas() {
 	'use strict';
+
+	meretBeall();
+	console.log(meretKell);
+	
 	var mennyiseg = document.getElementById("mennyiseg").value;
 	netto.innerHTML = szin.a3.egyPluszNulla.db1.ar * mennyiseg;
 	var bruttoErtek = netto.innerHTML * afa;
