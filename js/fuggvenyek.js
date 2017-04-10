@@ -46,7 +46,7 @@ function szamitas() {
 	var mennyiseg = document.getElementById("mennyiseg").value;
 	netto.innerHTML = szin.a3.egyPluszNulla.db1.ar * mennyiseg;
 	var bruttoErtek = netto.innerHTML * afa;
-	brutto.innerHTML = Math.round(bruttoErtek * 100) / 100;
+	brutto.innerHTML = Math.round(bruttoErtek * 10) / 10;
 };
 
 function torles() {
