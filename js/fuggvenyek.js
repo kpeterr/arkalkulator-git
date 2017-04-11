@@ -10,7 +10,7 @@ var meretA5 = document.getElementById("meretA5");
 var meretA6 = document.getElementById("meretA6");
 var meretLA4 = document.getElementById("meretLA4");
 
-var meretKell = "";
+var meretKell = {};
 
 function meretBeall() {
 	"use strict";
