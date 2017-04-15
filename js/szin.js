@@ -514,5 +514,9 @@ var szin = {
 				"ar": 50
 			}
 		}
+	},
+	"la4": {
+		"teszt": "teszt",
+		"valami": "valami"
 	}
 };
