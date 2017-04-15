@@ -40,6 +40,58 @@ var szin3 = document.getElementById("szin3"); // 4+0
 var szin4 = document.getElementById("szin4"); // 4+1
 var szin5 = document.getElementById("szin5"); // 4+4
 
+var szinAr = 0;
+
+function szinBeall() {
+	"use strict";
+	if (meretA3.checked) {
+		papir8.disabled = true;
+		papir9.disabled = true;
+		papir10.disabled = true;
+		papir11.disabled = true;
+		papir12.disabled = true;
+		if (szin1.checked) {
+			if (mennyiseg.value <= szinA4.egyPluszNulla.db500.db / 2 - 1) {
+				szinAr = szinA4.egyPluszNulla.db1.ar * 2;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db1000.db / 2 - 1) {
+				szinAr = szinA4.egyPluszNulla.db500.ar * 2;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db10000.db / 2 - 1) {
+				szinAr = szinA4.egyPluszNulla.db1000.ar * 2;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db50000.db / 2 - 1) {
+				szinAr = szinA4.egyPluszNulla.db10000.ar * 2;
+			} else {
+				szinAr = szinA4.egyPluszNulla.db50000.ar * 2;
+			}
+		} else if (szin2.checked) {
+			if (mennyiseg.value <= szinA4.egyPluszEgy.db250.db / 2 - 1) {
+				szinAr = szinA4.egyPluszEgy.db1.ar * 2;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db500.db / 2 - 1) {
+				szinAr = szinA4.egyPluszEgy.db250.ar * 2;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db5000.db / 2 - 1) {
+				szinAr = szinA4.egyPluszEgy.db500.ar * 2;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db25000.db / 2 - 1) {
+				szinAr = szinA4.egyPluszEgy.db5000.ar * 2;
+			} else {
+				szinAr = szinA4.egyPluszEgy.db25000.ar * 2;
+			}
+		} else if (szin3.checked) {
+			
+		} else if (szin4.checked) {
+			
+		} else {
+
+		}
+	} else if (meretA4.checked) {
+		
+	} else if (meretA5.checked) {
+		
+	} else if (meretA6.checked) {
+		
+	} else {
+		
+	}
+}
+
 // Papírok definiálása:
 var papir1 = document.getElementById("papir1");
 var papir2 = document.getElementById("papir2");
@@ -320,6 +372,9 @@ function szamitas() {
 
 	papirBeall();
 	console.log(papirAr);
+
+	szinBeall();
+	console.log(szinAr);
 	
 	netto.innerHTML = szin.a3.egyPluszNulla.db1.ar * mennyiseg;
 	var bruttoErtek = netto.innerHTML * afa;
