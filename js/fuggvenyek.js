@@ -57,20 +57,440 @@ function szinBeall() {
 				szinAr = szinA4.egyPluszEgy.db25000.ar * 2;
 			}
 		} else if (szin3.checked) {
-			
+			if (mennyiseg.value <= szinA4.negyPluszNulla.db10.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db1.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db20.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db10.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db50.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db20.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db100.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db50.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db200.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db100.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db500.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db200.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db1000.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db500.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db5000.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db1000.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db10000.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db5000.ar * 2;
+			} else {
+				szinAr = szinA4.negyPluszNulla.db10000.ar * 2;
+			}
 		} else if (szin4.checked) {
-			
+			if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db1.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db20.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db10.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db20.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db50.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db200.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db100.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db200.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db1000.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db500.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db1000.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10000.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db5000.ar * 2;
+			} else {
+				szinAr = szinA4.negyPluszEgy.db10000.ar * 2;
+			}
 		} else {
-
+			if (mennyiseg.value <= szinA4.negyPluszEgy.db5.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db1.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db5.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db25.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db10.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db25.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db50.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db250.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db100.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db250.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db2500.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db500.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db / 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db2500.ar * 2;
+			} else {
+				szinAr = szinA4.negyPluszEgy.db5000.ar * 2;
+			}
 		}
 	} else if (meretA4.checked) {
-		
+		if (szin1.checked) {
+			if (mennyiseg.value <= szinA4.egyPluszNulla.db500.db - 1) {
+				szinAr = szinA4.egyPluszNulla.db1.ar;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db1000.db - 1) {
+				szinAr = szinA4.egyPluszNulla.db500.ar;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db10000.db - 1) {
+				szinAr = szinA4.egyPluszNulla.db1000.ar;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db50000.db - 1) {
+				szinAr = szinA4.egyPluszNulla.db10000.ar;
+			} else {
+				szinAr = szinA4.egyPluszNulla.db50000.ar;
+			}
+		} else if (szin2.checked) {
+			if (mennyiseg.value <= szinA4.egyPluszEgy.db250.db - 1) {
+				szinAr = szinA4.egyPluszEgy.db1.ar;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db500.db - 1) {
+				szinAr = szinA4.egyPluszEgy.db250.ar;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db5000.db - 1) {
+				szinAr = szinA4.egyPluszEgy.db500.ar;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db25000.db - 1) {
+				szinAr = szinA4.egyPluszEgy.db5000.ar;
+			} else {
+				szinAr = szinA4.egyPluszEgy.db25000.ar;
+			}
+		} else if (szin3.checked) {
+			if (mennyiseg.value <= szinA4.negyPluszNulla.db10.db - 1) {
+				szinAr = szinA4.negyPluszNulla.db1.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db20.db - 1) {
+				szinAr = szinA4.negyPluszNulla.db10.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db50.db - 1) {
+				szinAr = szinA4.negyPluszNulla.db20.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db100.db - 1) {
+				szinAr = szinA4.negyPluszNulla.db50.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db200.db - 1) {
+				szinAr = szinA4.negyPluszNulla.db100.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db500.db - 1) {
+				szinAr = szinA4.negyPluszNulla.db200.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db1000.db - 1) {
+				szinAr = szinA4.negyPluszNulla.db500.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db5000.db - 1) {
+				szinAr = szinA4.negyPluszNulla.db1000.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db10000.db - 1) {
+				szinAr = szinA4.negyPluszNulla.db5000.ar;
+			} else {
+				szinAr = szinA4.negyPluszNulla.db10000.ar;
+			}
+		} else if (szin4.checked) {
+			if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db1.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db20.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db10.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db20.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db50.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db200.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db100.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db200.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db1000.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db500.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db1000.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10000.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db5000.ar;
+			} else {
+				szinAr = szinA4.negyPluszEgy.db10000.ar;
+			}
+		} else {
+			if (mennyiseg.value <= szinA4.negyPluszEgy.db5.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db1.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db5.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db25.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db10.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db25.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db50.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db250.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db100.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db250.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db2500.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db500.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db - 1) {
+				szinAr = szinA4.negyPluszEgy.db2500.ar;
+			} else {
+				szinAr = szinA4.negyPluszEgy.db5000.ar;
+			}
+		}
 	} else if (meretA5.checked) {
-		
+		if (szin1.checked) {
+			if (mennyiseg.value <= szinA4.egyPluszNulla.db500.db * 2 - 1) {
+				szinAr = szinA4.egyPluszNulla.db1.ar / 2;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db1000.db * 2 - 1) {
+				szinAr = szinA4.egyPluszNulla.db500.ar / 2;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db10000.db * 2 - 1) {
+				szinAr = szinA4.egyPluszNulla.db1000.ar / 2;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db50000.db * 2 - 1) {
+				szinAr = szinA4.egyPluszNulla.db10000.ar / 2;
+			} else {
+				szinAr = szinA4.egyPluszNulla.db50000.ar / 2;
+			}
+		} else if (szin2.checked) {
+			if (mennyiseg.value <= szinA4.egyPluszEgy.db250.db * 2 - 1) {
+				szinAr = szinA4.egyPluszEgy.db1.ar / 2;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db500.db * 2 - 1) {
+				szinAr = szinA4.egyPluszEgy.db250.ar / 2;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db5000.db * 2 - 1) {
+				szinAr = szinA4.egyPluszEgy.db500.ar / 2;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db25000.db * 2 - 1) {
+				szinAr = szinA4.egyPluszEgy.db5000.ar / 2;
+			} else {
+				szinAr = szinA4.egyPluszEgy.db25000.ar / 2;
+			}
+		} else if (szin3.checked) {
+			if (mennyiseg.value <= szinA4.negyPluszNulla.db10.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db1.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db20.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db10.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db50.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db20.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db100.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db50.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db200.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db100.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db500.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db200.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db1000.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db500.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db5000.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db1000.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db10000.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNulla.db5000.ar / 2;
+			} else {
+				szinAr = szinA4.negyPluszNulla.db10000.ar / 2;
+			}
+		} else if (szin4.checked) {
+			if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db1.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db20.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db10.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db20.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db50.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db200.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db100.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db200.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db1000.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db500.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db1000.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10000.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db5000.ar / 2;
+			} else {
+				szinAr = szinA4.negyPluszEgy.db10000.ar / 2;
+			}
+		} else {
+			if (mennyiseg.value <= szinA4.negyPluszEgy.db5.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db1.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db5.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db25.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db10.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db25.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db50.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db250.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db100.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db250.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db2500.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db500.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db * 2 - 1) {
+				szinAr = szinA4.negyPluszEgy.db2500.ar / 2;
+			} else {
+				szinAr = szinA4.negyPluszEgy.db5000.ar / 2;
+			}
+		}
 	} else if (meretA6.checked) {
-		
+		if (szin1.checked) {
+			if (mennyiseg.value <= szinA4.egyPluszNulla.db500.db * 4 - 1) {
+				szinAr = szinA4.egyPluszNulla.db1.ar / 4;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db1000.db * 4 - 1) {
+				szinAr = szinA4.egyPluszNulla.db500.ar / 4;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db10000.db * 4 - 1) {
+				szinAr = szinA4.egyPluszNulla.db1000.ar / 4;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db50000.db * 4 - 1) {
+				szinAr = szinA4.egyPluszNulla.db10000.ar / 4;
+			} else {
+				szinAr = szinA4.egyPluszNulla.db50000.ar / 4;
+			}
+		} else if (szin2.checked) {
+			if (mennyiseg.value <= szinA4.egyPluszEgy.db250.db * 4 - 1) {
+				szinAr = szinA4.egyPluszEgy.db1.ar / 4;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db500.db * 4 - 1) {
+				szinAr = szinA4.egyPluszEgy.db250.ar / 4;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db5000.db * 4 - 1) {
+				szinAr = szinA4.egyPluszEgy.db500.ar / 4;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db25000.db * 4 - 1) {
+				szinAr = szinA4.egyPluszEgy.db5000.ar / 4;
+			} else {
+				szinAr = szinA4.egyPluszEgy.db25000.ar / 4;
+			}
+		} else if (szin3.checked) {
+			if (mennyiseg.value <= szinA4.negyPluszNulla.db10.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNulla.db1.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db20.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNulla.db10.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db50.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNulla.db20.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db100.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNulla.db50.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db200.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNulla.db100.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db500.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNulla.db200.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db1000.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNulla.db500.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db5000.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNulla.db1000.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db10000.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNulla.db5000.ar / 4;
+			} else {
+				szinAr = szinA4.negyPluszNulla.db10000.ar / 4;
+			}
+		} else if (szin4.checked) {
+			if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db1.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db20.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db10.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db20.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db50.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db200.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db100.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db200.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db1000.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db500.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db1000.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10000.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db5000.ar / 4;
+			} else {
+				szinAr = szinA4.negyPluszEgy.db10000.ar / 4;
+			}
+		} else {
+			if (mennyiseg.value <= szinA4.negyPluszEgy.db5.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db1.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db5.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db25.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db10.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db25.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db50.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db250.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db100.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db250.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db2500.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db500.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db * 4 - 1) {
+				szinAr = szinA4.negyPluszEgy.db2500.ar / 4;
+			} else {
+				szinAr = szinA4.negyPluszEgy.db5000.ar / 4;
+			}
+		}
 	} else {
-		
+		if (szin1.checked) {
+			if (mennyiseg.value <= szinA4.egyPluszNulla.db500.db * 3 - 1) {
+				szinAr = szinA4.egyPluszNulla.db1.ar / 3;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db1000.db * 3 - 1) {
+				szinAr = szinA4.egyPluszNulla.db500.ar / 3;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db10000.db * 3 - 1) {
+				szinAr = szinA4.egyPluszNulla.db1000.ar / 3;
+			} else if (mennyiseg.value <= szinA4.egyPluszNulla.db50000.db * 3 - 1) {
+				szinAr = szinA4.egyPluszNulla.db10000.ar / 3;
+			} else {
+				szinAr = szinA4.egyPluszNulla.db50000.ar / 3;
+			}
+		} else if (szin2.checked) {
+			if (mennyiseg.value <= szinA4.egyPluszEgy.db250.db * 3 - 1) {
+				szinAr = szinA4.egyPluszEgy.db1.ar / 3;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db500.db * 3 - 1) {
+				szinAr = szinA4.egyPluszEgy.db250.ar / 3;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db5000.db * 3 - 1) {
+				szinAr = szinA4.egyPluszEgy.db500.ar / 3;
+			} else if (mennyiseg.value <= szinA4.egyPluszEgy.db25000.db * 3 - 1) {
+				szinAr = szinA4.egyPluszEgy.db5000.ar / 3;
+			} else {
+				szinAr = szinA4.egyPluszEgy.db25000.ar / 3;
+			}
+		} else if (szin3.checked) {
+			if (mennyiseg.value <= szinA4.negyPluszNulla.db10.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNulla.db1.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db20.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNulla.db10.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db50.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNulla.db20.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db100.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNulla.db50.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db200.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNulla.db100.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db500.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNulla.db200.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db1000.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNulla.db500.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db5000.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNulla.db1000.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNulla.db10000.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNulla.db5000.ar / 3;
+			} else {
+				szinAr = szinA4.negyPluszNulla.db10000.ar / 3;
+			}
+		} else if (szin4.checked) {
+			if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db1.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db20.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db10.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db20.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db50.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db200.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db100.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db200.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db1000.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db500.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db1000.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10000.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db5000.ar / 3;
+			} else {
+				szinAr = szinA4.negyPluszEgy.db10000.ar / 3;
+			}
+		} else {
+			if (mennyiseg.value <= szinA4.negyPluszEgy.db5.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db1.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db5.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db25.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db10.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db25.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db50.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db250.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db100.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db250.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db2500.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db500.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db * 3 - 1) {
+				szinAr = szinA4.negyPluszEgy.db2500.ar / 3;
+			} else {
+				szinAr = szinA4.negyPluszEgy.db5000.ar / 3;
+			}
+		}
 	}
 }
 
