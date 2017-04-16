@@ -12,10 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
-	<!-- A Bootstrap JS hivatkozásai -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 	<!-- Saját stíluslap -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -129,14 +125,16 @@
 				<div class="col-md-3 col-xs-6">
 					<p class="netto_ar">Nettó: <span id="nyomtatas_netto">0.00</span></p>
 					<p class="brutto_ar">Bruttó: <span id="nyomtatas_brutto">0.00</span></p>
-					<form>
-						<div class="form-group">
-							<label class="control-label" for="mennyiseg">Mennyiség:</label>
-							<input type="number" class="form-control" id="mennyiseg" value="0">
-						</div>
-					</form>
-					<button type="button" class="btn btn-success" onclick="szamitas()">SZÁMOL</button>
-					<button type="button" class="btn btn-danger" onclick="torles()">TÖRLÉS</button>
+					
+					<label class="control-label" for="mennyiseg">Mennyiség:</label>
+					<input type="number" class="form-control" id="mennyiseg" value="0" onkeydown="enterGomb(event)">
+					
+					<div class="btn-divider"></div>
+
+					<div class="alert alert-success" role="alert">
+						Az <strong>Enter</strong> billentyű lenyomásával kezdődik a számolás!
+					</div>
+					<button type="button" class="btn btn-danger col-xs-12" onclick="torles()">TÖRLÉS</button>
 				</div>
 			</div>
 
@@ -151,6 +149,10 @@
 	<script src="js/szinA4.js"></script>
 	<script src="js/papir.js"></script>
 	<script src="js/fuggvenyek.js"></script>
+
+	<!-- A Bootstrap JS hivatkozásai -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 

@@ -764,23 +764,20 @@ var netto = document.getElementById("nyomtatas_netto");
 var brutto = document.getElementById("nyomtatas_brutto");
 //var nettoErtek = Number(netto.innerHTML);
 
-$('#mennyiseg').keypress(function(event){
-	var keycode = (event.keyCode ? event.keyCode : event.which);
-	if(keycode == '13'){
-		szamitas(); 
-	}
-});
+// Az Enter gomb lenyomásánál ez történik
+function enterGomb(event) {
+    if (event.keyCode == 13) {
+        "use strict";
 
-function szamitas() {
-	"use strict";
+		var mennyiseg = document.getElementById("mennyiseg").value;
 
-	var mennyiseg = document.getElementById("mennyiseg").value;
-
-	netto.innerHTML = (szinAr + papirAr) * mennyiseg;
-	var bruttoErtek = netto.innerHTML * afa;
-	brutto.innerHTML = Math.round(bruttoErtek * 10) / 10;
+		netto.innerHTML = (szinAr + papirAr) * mennyiseg;
+		var bruttoErtek = netto.innerHTML * afa;
+		brutto.innerHTML = Math.round(bruttoErtek * 10) / 10;
+    }
 }
 
+// A Törlés gomb lenyomásánák ez történik
 function torles() {
 	"use strict";
 	netto.innerHTML = "0.00";

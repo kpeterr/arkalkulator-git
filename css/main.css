@@ -34,3 +34,7 @@ body {
 	font-size: 25px;
 	font-weight: bold;
 }
+
+.btn-divider {
+	margin-top: 15px;
+}
