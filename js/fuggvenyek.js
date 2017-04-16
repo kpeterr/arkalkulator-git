@@ -762,7 +762,6 @@ function papirBeall() {
 // Függvények:
 var netto = document.getElementById("nyomtatas_netto");
 var brutto = document.getElementById("nyomtatas_brutto");
-//var nettoErtek = Number(netto.innerHTML);
 
 // Az Enter gomb lenyomásánál ez történik
 function enterGomb(event) {
@@ -777,15 +776,18 @@ function enterGomb(event) {
     }
 }
 
-// A Törlés gomb lenyomásánák ez történik
+// A Számolás gombra kattintva ez történik
+function szamitas() {
+  	"use strict";
+  
+ 	var mennyiseg = document.getElementById("mennyiseg").value;
+ 
+ 	netto.innerHTML = (szinAr + papirAr) * mennyiseg;
+ 	var bruttoErtek = netto.innerHTML * afa;
+ 	brutto.innerHTML = Math.round(bruttoErtek * 10) / 10;
+ }
+
+// A Törlés gombra kattintva ez történik
 function torles() {
-	"use strict";
-	netto.innerHTML = "0.00";
-	brutto.innerHTML = "0.00";
-	mennyiseg.value = 0;
-	papir8.disabled = false;
-	papir9.disabled = false;
-	papir10.disabled = false;
-	papir11.disabled = false;
-	papir12.disabled = false;
+	location.reload();
 }
