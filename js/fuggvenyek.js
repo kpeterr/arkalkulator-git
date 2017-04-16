@@ -764,6 +764,13 @@ var netto = document.getElementById("nyomtatas_netto");
 var brutto = document.getElementById("nyomtatas_brutto");
 //var nettoErtek = Number(netto.innerHTML);
 
+$('#mennyiseg').keypress(function(event){
+	var keycode = (event.keyCode ? event.keyCode : event.which);
+	if(keycode == '13'){
+		szamitas(); 
+	}
+});
+
 function szamitas() {
 	"use strict";
 
