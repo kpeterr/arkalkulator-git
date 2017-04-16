@@ -10,28 +10,15 @@ var meretA5 = document.getElementById("meretA5");
 var meretA6 = document.getElementById("meretA6");
 var meretLA4 = document.getElementById("meretLA4");
 
-var meretKell = {};
-
-function meretBeall() {
+function nincsIlyenA3asPapir() {
 	"use strict";
-	if (meretA3.checked) {
-		//papir8.style.textDecoration = "line-through";
-		papir8.disabled = true;
-		papir9.disabled = true;
-		papir10.disabled = true;
-		papir11.disabled = true;
-		papir12.disabled = true;
-		meretKell = szin.a3;
-	} else if (meretA4.checked) {
-		meretKell = szin.a4;
-	} else if (meretA5.checked) {
-		meretKell = szin.a5;
-	} else if (meretA6.checked) {
-		meretKell = szin.a6;
-	} else {
-		meretKell = szin.la4;
-	}
+	papir8.disabled = true;
+	papir9.disabled = true;
+	papir10.disabled = true;
+	papir11.disabled = true;
+	papir12.disabled = true;
 }
+
 
 // Színek definiálása:
 var szin1 = document.getElementById("szin1"); // 1+0
@@ -45,11 +32,6 @@ var szinAr = 0;
 function szinBeall() {
 	"use strict";
 	if (meretA3.checked) {
-		papir8.disabled = true;
-		papir9.disabled = true;
-		papir10.disabled = true;
-		papir11.disabled = true;
-		papir12.disabled = true;
 		if (szin1.checked) {
 			if (mennyiseg.value <= szinA4.egyPluszNulla.db500.db / 2 - 1) {
 				szinAr = szinA4.egyPluszNulla.db1.ar * 2;
@@ -367,16 +349,7 @@ function szamitas() {
 
 	var mennyiseg = document.getElementById("mennyiseg").value;
 
-	meretBeall();
-	console.log(meretKell);
-
-	papirBeall();
-	console.log(papirAr);
-
-	szinBeall();
-	console.log(szinAr);
-	
-	netto.innerHTML = szin.a3.egyPluszNulla.db1.ar * mennyiseg;
+	netto.innerHTML = (szinAr + papirAr) * mennyiseg;
 	var bruttoErtek = netto.innerHTML * afa;
 	brutto.innerHTML = Math.round(bruttoErtek * 10) / 10;
 }
