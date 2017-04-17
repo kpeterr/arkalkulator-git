@@ -101,26 +101,26 @@ function szinBeall() {
 				szinAr = szinA4.negyPluszEgy.db10000.ar * 2;
 			}
 		} else {
-			if (mennyiseg.value <= szinA4.negyPluszEgy.db5.db / 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db1.ar * 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db / 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db5.ar * 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db25.db / 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db10.ar * 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db / 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db25.ar * 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db / 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db50.ar * 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db250.db / 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db100.ar * 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db / 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db250.ar * 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db2500.db / 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db500.ar * 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db / 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db2500.ar * 2;
+			if (mennyiseg.value <= szinA4.negyPluszNegy.db5.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db1.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db10.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db5.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db25.db / 2 - 3) {
+				szinAr = szinA4.negyPluszNegy.db10.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db50.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db25.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db100.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db50.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db250.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db100.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db500.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db250.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db2500.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db500.ar * 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db5000.db / 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db2500.ar * 2;
 			} else {
-				szinAr = szinA4.negyPluszEgy.db5000.ar * 2;
+				szinAr = szinA4.negyPluszNegy.db5000.ar * 2;
 			}
 		}
 	} else if (meretA4.checked) {
@@ -193,26 +193,26 @@ function szinBeall() {
 				szinAr = szinA4.negyPluszEgy.db10000.ar;
 			}
 		} else {
-			if (mennyiseg.value <= szinA4.negyPluszEgy.db5.db - 1) {
-				szinAr = szinA4.negyPluszEgy.db1.ar;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db - 1) {
-				szinAr = szinA4.negyPluszEgy.db5.ar;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db25.db - 1) {
-				szinAr = szinA4.negyPluszEgy.db10.ar;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db - 1) {
-				szinAr = szinA4.negyPluszEgy.db25.ar;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db - 1) {
-				szinAr = szinA4.negyPluszEgy.db50.ar;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db250.db - 1) {
-				szinAr = szinA4.negyPluszEgy.db100.ar;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db - 1) {
-				szinAr = szinA4.negyPluszEgy.db250.ar;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db2500.db - 1) {
-				szinAr = szinA4.negyPluszEgy.db500.ar;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db - 1) {
-				szinAr = szinA4.negyPluszEgy.db2500.ar;
+			if (mennyiseg.value <= szinA4.negyPluszNegy.db5.db - 1) {
+				szinAr = szinA4.negyPluszNegy.db1.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db10.db - 1) {
+				szinAr = szinA4.negyPluszNegy.db5.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db25.db - 1) {
+				szinAr = szinA4.negyPluszNegy.db10.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db50.db - 1) {
+				szinAr = szinA4.negyPluszNegy.db25.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db100.db - 1) {
+				szinAr = szinA4.negyPluszNegy.db50.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db250.db - 1) {
+				szinAr = szinA4.negyPluszNegy.db100.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db500.db - 1) {
+				szinAr = szinA4.negyPluszNegy.db250.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db2500.db - 1) {
+				szinAr = szinA4.negyPluszNegy.db500.ar;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db5000.db - 1) {
+				szinAr = szinA4.negyPluszNegy.db2500.ar;
 			} else {
-				szinAr = szinA4.negyPluszEgy.db5000.ar;
+				szinAr = szinA4.negyPluszNegy.db5000.ar;
 			}
 		}
 	} else if (meretA5.checked) {
@@ -285,26 +285,26 @@ function szinBeall() {
 				szinAr = szinA4.negyPluszEgy.db10000.ar / 2;
 			}
 		} else {
-			if (mennyiseg.value <= szinA4.negyPluszEgy.db5.db * 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db1.ar / 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db * 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db5.ar / 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db25.db * 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db10.ar / 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db * 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db25.ar / 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db * 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db50.ar / 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db250.db * 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db100.ar / 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db * 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db250.ar / 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db2500.db * 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db500.ar / 2;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db * 2 - 1) {
-				szinAr = szinA4.negyPluszEgy.db2500.ar / 2;
+			if (mennyiseg.value <= szinA4.negyPluszNegy.db5.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db1.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db10.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db5.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db25.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db10.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db50.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db25.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db100.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db50.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db250.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db100.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db500.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db250.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db2500.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db500.ar / 2;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db5000.db * 2 - 1) {
+				szinAr = szinA4.negyPluszNegy.db2500.ar / 2;
 			} else {
-				szinAr = szinA4.negyPluszEgy.db5000.ar / 2;
+				szinAr = szinA4.negyPluszNegy.db5000.ar / 2;
 			}
 		}
 	} else if (meretA6.checked) {
@@ -377,26 +377,26 @@ function szinBeall() {
 				szinAr = szinA4.negyPluszEgy.db10000.ar / 4;
 			}
 		} else {
-			if (mennyiseg.value <= szinA4.negyPluszEgy.db5.db * 4 - 1) {
-				szinAr = szinA4.negyPluszEgy.db1.ar / 4;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db * 4 - 1) {
-				szinAr = szinA4.negyPluszEgy.db5.ar / 4;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db25.db * 4 - 1) {
-				szinAr = szinA4.negyPluszEgy.db10.ar / 4;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db * 4 - 1) {
-				szinAr = szinA4.negyPluszEgy.db25.ar / 4;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db * 4 - 1) {
-				szinAr = szinA4.negyPluszEgy.db50.ar / 4;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db250.db * 4 - 1) {
-				szinAr = szinA4.negyPluszEgy.db100.ar / 4;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db * 4 - 1) {
-				szinAr = szinA4.negyPluszEgy.db250.ar / 4;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db2500.db * 4 - 1) {
-				szinAr = szinA4.negyPluszEgy.db500.ar / 4;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db * 4 - 1) {
-				szinAr = szinA4.negyPluszEgy.db2500.ar / 4;
+			if (mennyiseg.value <= szinA4.negyPluszNegy.db5.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNegy.db1.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db10.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNegy.db5.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db25.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNegy.db10.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db50.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNegy.db25.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db100.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNegy.db50.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db250.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNegy.db100.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db500.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNegy.db250.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db2500.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNegy.db500.ar / 4;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db5000.db * 4 - 1) {
+				szinAr = szinA4.negyPluszNegy.db2500.ar / 4;
 			} else {
-				szinAr = szinA4.negyPluszEgy.db5000.ar / 4;
+				szinAr = szinA4.negyPluszNegy.db5000.ar / 4;
 			}
 		}
 	} else {
@@ -469,26 +469,26 @@ function szinBeall() {
 				szinAr = szinA4.negyPluszEgy.db10000.ar / 3;
 			}
 		} else {
-			if (mennyiseg.value <= szinA4.negyPluszEgy.db5.db * 3 - 1) {
-				szinAr = szinA4.negyPluszEgy.db1.ar / 3;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db10.db * 3 - 1) {
-				szinAr = szinA4.negyPluszEgy.db5.ar / 3;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db25.db * 3 - 1) {
-				szinAr = szinA4.negyPluszEgy.db10.ar / 3;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db50.db * 3 - 1) {
-				szinAr = szinA4.negyPluszEgy.db25.ar / 3;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db100.db * 3 - 1) {
-				szinAr = szinA4.negyPluszEgy.db50.ar / 3;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db250.db * 3 - 1) {
-				szinAr = szinA4.negyPluszEgy.db100.ar / 3;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db500.db * 3 - 1) {
-				szinAr = szinA4.negyPluszEgy.db250.ar / 3;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db2500.db * 3 - 1) {
-				szinAr = szinA4.negyPluszEgy.db500.ar / 3;
-			} else if (mennyiseg.value <= szinA4.negyPluszEgy.db5000.db * 3 - 1) {
-				szinAr = szinA4.negyPluszEgy.db2500.ar / 3;
+			if (mennyiseg.value <= szinA4.negyPluszNegy.db5.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNegy.db1.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db10.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNegy.db5.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db25.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNegy.db10.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db50.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNegy.db25.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db100.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNegy.db50.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db250.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNegy.db100.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db500.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNegy.db250.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db2500.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNegy.db500.ar / 3;
+			} else if (mennyiseg.value <= szinA4.negyPluszNegy.db5000.db * 3 - 1) {
+				szinAr = szinA4.negyPluszNegy.db2500.ar / 3;
 			} else {
-				szinAr = szinA4.negyPluszEgy.db5000.ar / 3;
+				szinAr = szinA4.negyPluszNegy.db5000.ar / 3;
 			}
 		}
 	}
@@ -650,7 +650,7 @@ function papirBeall() {
 		} else if (papir15.checked) {
 			papirAr = papir.a4.papir15.db1.ar / 2;
 		} else if (papir16.checked) {
-			if (mennyiseg.value <= papir.a4.papir16.db100.db - 1) {
+			if (mennyiseg.value <= papir.a4.papir16.db100.db * 2 - 1) {
 				papirAr = papir.a4.papir16.db1.ar / 2;
 			} else {
 				papirAr = papir.a4.papir16.db100.ar / 2;
@@ -700,7 +700,7 @@ function papirBeall() {
 		} else if (papir15.checked) {
 			papirAr = papir.a4.papir15.db1.ar / 4;
 		} else if (papir16.checked) {
-			if (mennyiseg.value <= papir.a4.papir16.db100.db - 1) {
+			if (mennyiseg.value <= papir.a4.papir16.db100.db * 4 - 1) {
 				papirAr = papir.a4.papir16.db1.ar / 4;
 			} else {
 				papirAr = papir.a4.papir16.db100.ar / 4;
@@ -750,7 +750,7 @@ function papirBeall() {
 		} else if (papir15.checked) {
 			papirAr = papir.a4.papir15.db1.ar / 3;
 		} else if (papir16.checked) {
-			if (mennyiseg.value <= papir.a4.papir16.db100.db - 1) {
+			if (mennyiseg.value <= papir.a4.papir16.db100.db * 3 - 1) {
 				papirAr = papir.a4.papir16.db1.ar / 3;
 			} else {
 				papirAr = papir.a4.papir16.db100.ar / 3;
@@ -770,7 +770,10 @@ function enterGomb(event) {
 
 		var mennyiseg = document.getElementById("mennyiseg").value;
 
-		netto.innerHTML = (szinAr + papirAr) * mennyiseg;
+		szinBeall();
+		papirBeall();
+
+		netto.innerHTML = Math.round(((szinAr + papirAr) * mennyiseg) * 10) / 10;
 		var bruttoErtek = netto.innerHTML * afa;
 		brutto.innerHTML = Math.round(bruttoErtek * 10) / 10;
     }
@@ -779,12 +782,15 @@ function enterGomb(event) {
 // A Számolás gombra kattintva ez történik
 function szamitas() {
   	"use strict";
-  
- 	var mennyiseg = document.getElementById("mennyiseg").value;
- 
- 	netto.innerHTML = (szinAr + papirAr) * mennyiseg;
- 	var bruttoErtek = netto.innerHTML * afa;
- 	brutto.innerHTML = Math.round(bruttoErtek * 10) / 10;
+
+	var mennyiseg = document.getElementById("mennyiseg").value;
+
+	szinBeall();
+	papirBeall();
+
+	netto.innerHTML = Math.round(((szinAr + papirAr) * mennyiseg) * 10) / 10;
+	var bruttoErtek = netto.innerHTML * afa;
+	brutto.innerHTML = Math.round(bruttoErtek * 10) / 10;
  }
 
 // A Törlés gombra kattintva ez történik
