@@ -786,5 +786,5 @@ function enterGomb(event) {
 
 // A Törlés gombra kattintva ez történik
 function torles() {
-	location.reload();
+	window.location.reload(true);
 }
